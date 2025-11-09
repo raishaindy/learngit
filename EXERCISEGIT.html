@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pomotato 🥔 | Focus, Grow, and Thrive</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #FFF8E7;
+      color: #333;
+    }
+
+    /* === Navbar === */
+    nav {
+      background-color: #FFF8E7;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 40px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 1.5em;
+      font-weight: 700;
+      color: #B97A57;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      padding: 8px 14px;
+      border-radius: 25px;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      background-color: #B97A57;
+      color: white;
+    }
+
+    /* Active green button for Home */
+    .active {
+      background-color: #8EBA6C;
+      color: white;
+      padding: 8px 18px;
+      border-radius: 25px;
+      font-weight: 600;
+    }
+
+    .garden-btn {
+      background-color: transparent;
+      color: #333;
+      padding: 8px 18px;
+      border-radius: 25px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .garden-btn:hover {
+      background-color: #8EBA6C;
+      color: white;
+    }
+
+    /* === Hero Section === */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 100px 20px 60px;
+      background: url('https://i.imgur.com/X6VqpPQ.png') no-repeat center/cover;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      color: #B97A57;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin-bottom: 25px;
+      color: #555;
+      font-size: 1.1em;
+    }
+
+    .cta-btn {
+      background-color: #8EBA6C;
+      color: white;
+      padding: 14px 30px;
+      border-radius: 30px;
+      font-size: 1.1em;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .cta-btn:hover {
+      background-color: #7ca35e;
+    }
+
+    /* === Features Section === */
+    .features {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 80px 40px;
+      background-color: white;
+    }
+
+    .feature-card {
+      background-color: #FFF8E7;
+      border-radius: 20px;
+      padding: 30px;
+      text-align: center;
+      width: 280px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature-card img {
+      width: 70px;
+      margin-bottom: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .feature-card img:hover {
+      transform: scale(1.1);
+    }
+
+    .feature-card h3 {
+      color: #B97A57;
+      margin-bottom: 10px;
+    }
+
+    /* === Premium Section === */
+    .premium {
+      background-color: #B97A57;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .premium h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .premium p {
+      max-width: 600px;
+      margin: 0 auto 30px;
+      font-size: 1.1em;
+    }
+
+    .premium .btn-premium {
+      background-color: white;
+      color: #B97A57;
+      padding: 12px 30px;
+      border-radius: 25px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .premium .btn-premium:hover {
+      background-color: #f6d6c0;
+    }
+
+    /* === Footer === */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">🥔 Pomotato</div>
+    <ul class="nav-links">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">Profile</a></li>
+      <li><a href="#">Timer</a></li>
+      <li><a href="#">Mood Tracker</a></li>
+      <li><a href="#" class="garden-btn">Your Garden</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Stay Focused, Grow Like a Potato 🥔</h1>
+    <p>Track your mood, manage tasks, and grow your digital garden — a healthy mind grows happy veggies!</p>
+    <a href="#" class="cta-btn">Start Growing</a>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="feature-card">
+      <img src="https://img.icons8.com/color/96/potato.png" alt="To-Do List">
+      <h3>To-Do List</h3>
+      <p>Organize your daily tasks, tick them off one by one, and watch your potato garden thrive.</p>
+    </div>
+
+    <div class="feature-card">
+      <img src="https://img.icons8.com/color/96/onion.png" alt="AI Planner">
+      <h3>AI Planner</h3>
+      <p>Let your onion buddy 🧅 plan your day smartly — balance your time and grow with nature’s rhythm.</p>
+    </div>
+
+    <div class="feature-card">
+      <img src="https://img.icons8.com/color/96/peas.png" alt="Focus Tracker">
+      <h3>Focus Tracker</h3>
+      <p>See your daily focus score and grow your digital garden the more you stay consistent!</p>
+    </div>
+  </section>
+
+  <!-- Premium Section -->
+  <section class="premium">
+    <h2>Upgrade to Pomotato Pro 🪴</h2>
+    <p>Access advanced features — track long-term goals, sync across devices, and unlock exclusive potato plants!</p>
+    <a href="#" class="btn-premium">Upgrade Now</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Pomotato. All Rights Reserved 🥔</p>
+  </footer>
+</body>
+</html>
