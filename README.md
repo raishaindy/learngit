@@ -1,1 +1,1 @@
-GUA MAU BELAJAR GIT
+I Wamt to learn git
